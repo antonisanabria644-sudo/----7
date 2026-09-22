@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Gaming Store - Tienda de Videojuegos</title>
+    <title>MLBB Store Bolivia - Recargas Oficiales</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Fuente Google Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Encabezado / Navegación -->
+    <!-- Encabezado -->
     <header class="navbar">
         <div class="container nav-container">
             <a href="#" class="brand-logo">
-                <span class="logo-icon">🎮</span> NEXUS<span class="highlight">GAMING</span>
+                <span class="logo-icon">💎</span> MLBB<span class="highlight">STORE</span>
             </a>
             <nav class="nav-menu">
                 <a href="#catalog" class="nav-link">Catálogo</a>
-                <a href="#about" class="nav-link">Sobre Nosotros</a>
                 <button class="cart-btn" id="cart-btn" aria-label="Ver carrito">
                     <span class="cart-icon">🛒</span>
                     <span class="cart-text">Carrito</span>
@@ -33,26 +31,22 @@
     <!-- Banner Hero -->
     <section class="hero">
         <div class="container hero-content">
-            <span class="hero-subtitle">Novedades y Lanzamientos</span>
-            <h1 class="hero-title">Eleva tu experiencia de juego al siguiente nivel</h1>
-            <p class="hero-description">Descubre los títulos más populares con entrega digital instantánea y las mejores ofertas del mercado.</p>
-            <a href="#catalog" class="btn btn-primary">Explorar Catálogo</a>
+            <span class="hero-subtitle">Mobile Legends: Bang Bang</span>
+            <h1 class="hero-title">Recargas Rápidas y Seguras en Bolivia</h1>
+            <p class="hero-description">Consigue tus pases y diamantes al instante con los mejores precios en Bolivianos (Bs).</p>
+            <a href="#catalog" class="btn btn-primary">Ver Ofertas</a>
         </div>
     </section>
 
-    <!-- Sección Principal / Catálogo -->
+    <!-- Catálogo de Productos -->
     <main class="container" id="catalog">
         <section class="catalog-section">
             <div class="section-header">
-                <h2>Juegos Destacados</h2>
-                <div class="filter-controls">
-                    <button class="filter-btn active" data-category="all">Todos</button>
-                </div>
+                <h2>Paquetes y Diamantes</h2>
             </div>
 
-            <!-- Grilla dinámica de productos -->
             <div class="products-grid" id="products-grid">
-                <!-- Se poblará dinámicamente con JS -->
+                <!-- Se poblará dinámicamente con JavaScript -->
             </div>
         </section>
     </main>
@@ -62,19 +56,19 @@
         <div class="modal-container">
             <div class="modal-header">
                 <h3>Tu Carrito de Compras</h3>
-                <button class="close-btn" id="close-cart-btn" aria-label="Cerrar carrito">&times;</button>
+                <button class="close-btn" id="close-cart-btn">&times;</button>
             </div>
             
             <div class="modal-body" id="cart-items">
-                <!-- Se poblará dinámicamente -->
+                <!-- Se llena con JS -->
             </div>
 
             <div class="modal-footer">
                 <div class="cart-summary">
-                    <span>Total a pagar:</span>
-                    <span class="total-price" id="cart-total">$0.00</span>
+                    <span>Total:</span>
+                    <span class="total-price" id="cart-total">Bs 0.00</span>
                 </div>
-                <button class="btn btn-success btn-block" id="checkout-btn">Procesar Pago</button>
+                <button class="btn btn-success btn-block" id="checkout-btn">Finalizar Pedido</button>
             </div>
         </div>
     </div>
@@ -82,10 +76,9 @@
     <!-- Contenedor para Notificaciones Toast -->
     <div class="toast-container" id="toast-container"></div>
 
-    <!-- Pie de página -->
     <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; 2026 Nexus Gaming Store. Todos los derechos reservados.</p>
+        <div class="container">
+            <p>&copy; 2026 MLBB Store Bolivia. Todos los derechos reservados.</p>
         </div>
     </footer>
 
